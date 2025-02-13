@@ -32,9 +32,9 @@ class CommandblockHandler(get_handler()):
         if not info.player:
             m = re.fullmatch(r'(?:\[Not Secure\] )?\[(?P<name>[^\]]+)\] (?P<message>.*)', info.content)
             if m and m['name'] == 'Server':
-                info.player, info.content = 'function', m['message']
+                info.player, info.content = '"!function"', m['message']
             elif m and m['name'] == '@':
-                info.player, info.content = 'commandblock', m['message']
+                info.player, info.content = '"!commandblock"', m['message']
         return info
 
 def on_load(server, prev_module):

@@ -17,10 +17,8 @@
 
 ## 权限
 
-可在permission.yml中设置函数(function)和命令方块(commandblock)的权限
+可在permission.yml中设置函数("!function")和命令方块("!commandblock")的权限
 
     admin:
-    - function
-    - commandblock
-
-出于安全考虑，建议管理员封禁function和commandblock用户
+    - '"!commandblock"'
+    - '"!function"'

@@ -1,6 +1,6 @@
 {
     "id": "commandblock_handler",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Commandblock Handler",
     "description": {
         "en_us": "Enable MCDR commands for function and commandblock.",
